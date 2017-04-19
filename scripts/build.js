@@ -15,11 +15,11 @@ const webpackEnv = Object.assign({}, process.env, {
 })
 
 exec('npm run build-lib')
-exec('npm run build-umd', webpackEnv)
-exec('npm run build-min', webpackEnv)
+// exec('npm run build-umd', webpackEnv)
+// exec('npm run build-min', webpackEnv)
 
-console.log(
-  '\ngzipped, the UMD build is ' + prettyBytes(
-    gzipSize.sync(readFileSync('umd/history.min.js'))
-  )
-)
+// console.log(
+//   '\ngzipped, the UMD build is ' + prettyBytes(
+//     gzipSize.sync(readFileSync('umd/history.min.js'))
+//   )
+// )
